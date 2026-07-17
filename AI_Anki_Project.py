@@ -46,7 +46,7 @@ if uploaded_file is not None:
                 try:
                     # Cấu hình AI
                     genai.configure(api_key=api_key)
-                    model = genai.GenerativeModel('gemini-2.5-flash')
+                    model = genai.GenerativeModel('gemini-1.5-flash')
                     
                     with st.spinner("AI đang quét bố cục ảnh và áp dụng Prompt của bạn..."):
                         # Gửi trực tiếp ảnh và Prompt của bạn cho AI xử lý bóc tách
